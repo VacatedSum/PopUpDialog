@@ -1,5 +1,3 @@
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.stage.*;
 import javafx.scene.*;
 import javafx.scene.layout.*;
@@ -33,7 +31,7 @@ import javafx.geometry.*;
  * @author Steve Cina, SUNY Ulster 2019
  *
  */
-public abstract class PopUpDialog implements EventHandler <ActionEvent> {
+public final class PopUpDialog {
 	static Stage stage; //all methods need this.
 	static boolean answer; //multiple methods need this
 	static TextField field; //getInput
